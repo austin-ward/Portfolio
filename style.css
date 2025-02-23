@@ -61,21 +61,6 @@ nav {
     animation: fadeIn 2s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .about {
-        margin: 2rem auto;
-        padding: 1rem;
-        max-width: 90%;
-        text-align: left;
-    }
-    .about p {
-        max-width: 90%;
-        text-align: left;
-        white-space: normal;
-
-    }
-}
-
 @keyframes fadeup {
     0% {
         opacity: 0;
