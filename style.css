@@ -61,6 +61,14 @@ nav {
     animation: fadeIn 2s ease-in-out;
 }
 
+.about p {
+    max-width: 90%;
+    word-wrap:break-word;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
 @media (max-width: 768px) {
     .about {
         margin: 1rem auto;
@@ -69,6 +77,12 @@ nav {
         text-align: center;
         line-height: 1.5;
         word-wrap: break-word;
+    }
+    .about p {
+        max-width: 100%;
+        text-align: center;
+        white-space: normal;
+
     }
 }
 
