@@ -61,6 +61,14 @@ nav {
     animation: fadeIn 2s ease-in-out;
 }
 
+@media (max-width: 768px) {
+    .about {
+        margin-left: 1rm;
+        margin-right: 1rm;
+        text-align: center;
+    }
+}
+
 @keyframes fadeup {
     0% {
         opacity: 0;
