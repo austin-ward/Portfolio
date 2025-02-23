@@ -61,7 +61,7 @@ nav {
     animation: fadeIn 2s ease-in-out;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .about {
         margin: 1rem auto;
         padding: 1rem;
