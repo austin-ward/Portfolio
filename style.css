@@ -61,11 +61,14 @@ nav {
     animation: fadeIn 2s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .about {
-        margin-left: 1rm;
-        margin-right: 1rm;
+        margin: 1rem auto;
+        padding: 1rem;
+        max-width: 90%;
         text-align: center;
+        line-height: 1.5;
+        word-wrap: break-word;
     }
 }
 
