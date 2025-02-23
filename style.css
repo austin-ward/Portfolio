@@ -57,30 +57,20 @@ nav {
     margin-left: 5cm;
     margin-right: 5cm;
     margin-bottom: 5cm;
-    justify-content: center;
+    text-align: left;
     animation: fadeIn 2s ease-in-out;
-}
-
-.about p {
-    max-width: 90%;
-    word-wrap:break-word;
-    text-align: center;
-    line-height: 1.5;
-    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
     .about {
-        margin: 1rem auto;
+        margin: 2rem auto;
         padding: 1rem;
         max-width: 90%;
         text-align: center;
-        line-height: 1.5;
-        word-wrap: break-word;
     }
     .about p {
         max-width: 90%;
-        text-align: left;
+        text-align: center;
         white-space: normal;
 
     }
