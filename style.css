@@ -25,6 +25,16 @@ nav {
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
 @keyframes fadeInFromLeft {
     0% {
         opacity: 0;
@@ -86,7 +96,7 @@ nav {
     color: white;
     padding: 1rem;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     animation: fadeup 1s ease-in-out;
