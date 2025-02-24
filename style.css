@@ -80,6 +80,7 @@ nav {
     width: 100%;
     animation: fadeup 1s ease-in-out;
 }
+<<<<<<< HEAD
 
 @media (max-width: 768px) {
     .about {
@@ -91,3 +92,17 @@ nav {
         position: fixed;
     }
 }
+=======
+
+@media (max-width: 768px) {
+    .about {
+        margin-left: .5cm;
+        margin-right: .5cm;
+        margin-bottom: 1.5cm;
+    }
+    .footer {
+        position: fixed;
+    }
+}
+
+>>>>>>> 9bd55f251b4a1b9ff89d889b33680ac0b689a283
