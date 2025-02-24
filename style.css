@@ -101,7 +101,7 @@ nav {
         margin-bottom: 1.5cm;
     }
     .footer {
-        position: fixed;
+        position: bottom;
     }
 }
 
