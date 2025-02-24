@@ -81,7 +81,6 @@ nav {
     bottom: 0;
 }
 
-/* Ensure footer stays at the bottom */
 body {
     display: flex;
     flex-direction: column;
@@ -92,11 +91,10 @@ main {
     flex-grow: 1;
 }
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
     .about {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        text-align: center;
+        margin-left: .5cm;
+        margin-right: .5cm;
+        text-align: left;
     }
 }
