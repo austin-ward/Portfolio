@@ -96,8 +96,9 @@ main {
     color: white;
     padding: 1rem;
     text-align: center;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     animation: fadeup 1s ease-in-out;
 }
