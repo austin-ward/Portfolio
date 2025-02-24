@@ -1,6 +1,9 @@
 nav {
     background-color: black;
     padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 .nav {
     list-style: none;
