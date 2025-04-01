@@ -3,31 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINF362 Portfolio</title>
+    <meta name="description" content="Welcome to my portfolio website. Showcasing my journey as a software engineer with projects, skills, and achievements.">
+    <meta name="keywords" content="Software Engineer, Portfolio, Web Development, Projects, Skills, UX, UI">
+    <meta name="author" content="Your Name">
+    <title>AW | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body class="body">
-    <nav>
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+<body>
+    <section id="home" class="section">
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
-    <div class="welcome">
-        <h1>Austin Ward</h1>
+    <div class="intro-content">
+        <div class="name">
+        <h1>Hello,<br>my name is <strong>Austin Ward</strong></h1>
+        </div>
+        <p class="subtitle">&lt;UX/UI developer&gt;</p>
+            <div class="card">
+                <div class="card-text">
+                    <p>Thinker.<br>Creator.<br>Doer.</p>
+                </div>
+                <img src="images/portrait.png" alt="Austin Ward">
     </div>
+    <button class="contact-btn">CONTACT ME</button>
+    <div class="social-icons">
+        <a href="#"><img src="images/github.png" alt="GitHub"></a>
+        <a href="#"><img src="images/X.png" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <a href="#projects" class="scroll-down">PROJECTS<br>↓</a>
+    </section>
 
-    <main>
-        <section class="about">
-            <h2>Who am I?</h2>
-            <p>Hello, my name is Austin Ward. I'm an undergrad student at the Univeristy at Albany studying Informatics 
-            with a concentration in UX design. In my free time, I enjoy hiking, 
-            exploring, and the occasional glass of wine. Below are my latest projects.</p>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>You can email me at award3@albany.edu</p>
-    </footer>
+    <section id="projects" class="section">
+        <div class="project-container">
+            <div class="project">
+                <div class="project-main">project.</div>
+                <div class="project-info">github<br>analytics</div>
+            </div>
+            <div class="project">
+                <div class="project-main">project.</div>
+                <div class="project-info">github<br>analytics</div>
+            </div>
+            <div class="project">
+                <div class="project-main">project.</div>
+                <div class="project-info">github<br>analytics</div>
+            </div>
+        </div>
+        <a href="#process" class="scroll-down">PROCESS<br>↓</a>
+    </section>
+
+
+    <section id="process" class="section">
+
+        <div class="process-content">
+            <h2>How I design</h2>
+            <p class="kiss">K.I.S.S.<br>
+                &lt;keep&gt;<br>
+                &lt;it&gt;<br>
+                &lt;simple&gt;<br>
+                &lt;stupid&gt;</p>
+            <div class="three-step-process">
+                <p>THE THREE STEP PROCESS</p>
+                <p>design</p>
+                <p>test</p>
+                <p>implement</p>
+            </div>
+            <a href="#contact" class="scroll-down">CONTACT ME<br>↓</a>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+        <div class="contact-info">
+            <p><img src="email.svg" alt="email"> award3@albany.edu</p>
+            <p><img src="phone.svg" alt="phone"> +1 720.470.3540</p>
+            <p><img src="resume.svg" alt="resume"> <a class="resume-btn" href="resume.pdf">Resume</a></p>
+            <hr>
+        </div>
+    </section>
 </body>
 </html>
