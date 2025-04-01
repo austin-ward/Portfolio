@@ -1,4 +1,5 @@
-# CIN362-Website-Project
-Spring 2025 Semester @ SUNY University at Albany
+## CIN362-Website-Project
+# Portfolio Date: Spring 2025
 
-I was tasked to create a simple and responsive landing page for a personal portfolio. 
+The following is my creative portfolio for UX and UI design. I've included my projects, work process, contact information, and personal details about who I am.
+
