@@ -16,6 +16,12 @@
     <nav class="navbar">
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
+    <div id="menu">
+        <a href="#home" onclick="toggleMenu()">HOME</a>
+        <a href="#projects" onclick="toggleMenu()">PROJECTS</a>
+        <a href="#process" onclick="toggleMenu()">PROCESS</a>
+        <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+    </div>
     <div class="intro-content">
         <div class="name">
         <h1>Hello,<br>my name is <strong>Austin Ward</strong></h1>
@@ -32,6 +38,7 @@
         <a href="#"><img src="images/github.png" alt="GitHub"></a>
         <a href="#"><img src="images/X.png" alt="Twitter"></a>
         <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
     </div>
     <a href="#projects" class="scroll-down">PROJECTS<br>↓</a>
     </section>
@@ -83,5 +90,11 @@
             <hr>
         </div>
     </section>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('menu-visible');
+}
+</script>
 </body>
 </html>
