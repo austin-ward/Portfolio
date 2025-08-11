@@ -1,87 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my portfolio website. Showcasing my journey as a software engineer with projects, skills, and achievements.">
-    <meta name="keywords" content="Software Engineer, Portfolio, Web Development, Projects, Skills, UX, UI">
-    <meta name="author" content="Your Name">
-    <title>AW | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Austin Ward, showcasing skills in UX/UI design, data analysis, and web app development.">
+  <meta name="keywords" content="Austin Ward, portfolio, UX/UI design, data analysis, web app development, front-end, back-end, React, JavaScript, HTML, CSS, Python, MySQL">
+  <meta name="author" content="Austin Ward">
+  <meta property="og:title" content="Portfolio - Austin Ward">
+  <meta property="og:description" content="Explore the portfolio of Austin Ward, featuring projects in UX/UI design, data analysis, and web app development.">
+  <meta property="og:image" content="https://austinwardphotography.com/portfolio-image.jpg">
+  <title>Portfolio - Austin Ward</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="home" class="section">
-    <nav class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    </nav>
-    <div class="intro-content">
-        <div class="name">
-        <h1>Hello,<br>my name is <strong>Austin Ward</strong></h1>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#about">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer"><img src="content/camera.png" alt="Photography Portfolio" width="auto" height="20">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="container">
+    <main>
+      <section id="hero">
+  <!-- LEFT -->
+  <div class="hero-left">
+    <div class="hero-name-traits">
+      <h1 id="hero-name">Austin Ward</h1>
+    </div>
+
+    <section id="hero-professions">
+      <ul class="professions">
+        <li>UX/UI Design</li>
+        <li>Data Analysis</li>
+        <li>Web App Dev</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2 id="education">Education</h2>
+      <h3>University at Albany</h3>
+      <p>Bachelor of Science in Informatics</p>
+      <p>Expected Graduation: May 2026</p>
+    </section>
+  </div>
+
+  <!-- RIGHT (BIG IMAGE) -->
+  <div class="hero-image-wrap">
+    <img src="content/portrait2.png" alt="Austin Ward portrait" id="hero-image">
+    <div class="hero-traits">
+          <ul class="traits">
+            <li>Curious</li>
+            <li>Pragmatic</li>
+            <li>Driven</li>
+          </ul>
+      </div>
+  </div>
+  <div class="social-links">
+      <a href="https://github.com/austin-ward" target="_blank" rel="noopener">
+        <img src="content/github.png" alt="GitHub" width="32" height="32">
+      </a>
+      <a href="https://linkedin.com/in/austinward5" target="_blank" rel="noopener">
+        <img src="content/linkedin.png" alt="LinkedIn" width="32" height="32">
+      </a>
+      <a href="mailto:award5@albany.edu" target="_blank" rel="noopener">
+        <img src="content/gmail.png" alt="Email" width="32" height="32">
+      </a>
+    </div>
+</section>
+
+      <section id="skills">
+        <div class="toolbox-title">
+          <h2>🛠️ Toolbox</h2>
         </div>
-        <p class="subtitle">&lt;UX/UI developer&gt;</p>
-            <div class="card">
-                <div class="card-text">
-                    <p>Thinker.<br>Creator.<br>Doer.</p>
+        <div class="tool-groups">
+
+                <div class="front-end">
+                  <h1 id="front-end">Front-End</h1>
+                  <ul class="front-end-list">
+                    <li><img src="content/tools/html.png" alt="HTML5" width="auto" height="32"> HTML5</li>
+                    <li><img src="content/tools/css.png" alt="CSS3" width="auto" height="32"> CSS3</li>
+                    <li><img src="content/tools/javascript.webp" alt="JavaScript" width="auto" height="32"> JavaScript</li>
+                  </ul>
                 </div>
-                <img src="images/portrait.png" alt="Austin Ward">
-    </div>
-    <button class="contact-btn">CONTACT ME</button>
-    <div class="social-icons">
-        <a href="#"><img src="images/github.png" alt="GitHub"></a>
-        <a href="#"><img src="images/X.png" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-    </div>
-    <a href="#projects" class="scroll-down">PROJECTS<br>↓</a>
-    </section>
 
-    <section id="projects" class="section">
-        <div class="project-container">
-            <div class="project">
-                <div class="project-main">project.</div>
-                <div class="project-info">github<br>analytics</div>
-            </div>
-            <div class="project">
-                <div class="project-main">project.</div>
-                <div class="project-info">github<br>analytics</div>
-            </div>
-            <div class="project">
-                <div class="project-main">project.</div>
-                <div class="project-info">github<br>analytics</div>
-            </div>
+                <div class="frameworks">
+                  <h1 id="frameworks">Frameworks</h1>
+                  <ul class="frameworks-list">
+                    <li><img src="content/tools/react.png" alt="React" width="auto" height="32"> React</li>
+                    <li><img src="content/tools/tailwind.png" alt="Tailwind CSS" width="auto" height="32"> Tailwind CSS</li>
+                    <li><img src="content/tools/bootstrap.png" alt="Bootstrap" width="auto" height="32"> Bootstrap</li>
+                    <li><img src="content/tools/next-js.png" alt="Next.js" width="auto" height="32"> Next.js</li>
+                  </ul>
+                </div>
+
+                <div class="back-end">
+                  <h1 id="back-end">Back-End</h1>
+                  <ul class="back-end-list">
+                    <li><img src="content/tools/python.png" alt="Python" width="auto" height="32"> Python</li>
+                    <li><img src="content/tools/mysql.png" alt="MySQL" width="auto" height="32"> MySQL</li>
+                    <li><img src="content/tools/node-js.png" alt="Node.js" width="auto" height="32"> Node.js</li>
+                  </ul>
+                </div>
+
+                <div class="workflow">
+                  <h1 id="workflow">Workflow</h1>
+                  <ul class="workflow-list">
+                    <li><img src="content/tools/figma.png" alt="Figma" width="auto" height="32"> Figma</li>
+                    <li><img src="content/tools/vscode.png" alt="VS Code" width="auto" height="32"> VS Code</li>
+                    <li><img src="content/tools/adobe.png" alt="Adobe CC" width="auto" height="32"> Adobe CC</li>
+                    <li><img src="content/tools/netlify.svg" alt="Netlify" width="auto" height="32"> Netlify</li>
+                  </ul>
+                </div>
+
+                <div class="data">
+                  <h1 id="data-title">Data Analysis</h1>
+                  <ul class="data-list">
+                    <li><img src="content/tools/powerbi.png" alt="Power BI" width="auto" height="32"> Power BI</li>
+                    <li><img src="content/tools/azure.png" alt="Azure" width="auto" height="32"> Azure</li>
+                    <li><img src="content/tools/tableau.png" alt="Tableau" width="auto" height="32"> Tableau</li>
+                  </ul>
+                </div>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project_1">
+          <h3>UX/UI Design</h3>
+          <p>Description of the project goes here. Highlight key features and technologies used.</p>
+          <a href="#" class="project-link">View Project</a>
         </div>
-        <a href="#process" class="scroll-down">PROCESS<br>↓</a>
-    </section>
-
-
-    <section id="process" class="section">
-
-        <div class="process-content">
-            <h2>How I design</h2>
-            <p class="kiss">K.I.S.S.<br>
-                &lt;keep&gt;<br>
-                &lt;it&gt;<br>
-                &lt;simple&gt;<br>
-                &lt;stupid&gt;</p>
-            <div class="three-step-process">
-                <p>THE THREE STEP PROCESS</p>
-                <p>design</p>
-                <p>test</p>
-                <p>implement</p>
-            </div>
-            <a href="#contact" class="scroll-down">CONTACT ME<br>↓</a>
+        <div class="project_2">
+          <h3>Data Analysis</h3>
+          <p>HTML5, CSS3, JavaScript, Node.js</p>
+          <p>A dynamic website for a fictitious coffee shop, showcasing user login function, inventory management, and online ordering.</p>
+          <a href="#" class="project-link">View Project</a>
         </div>
-    </section>
-
-
-    <section id="contact" class="section">
-        <div class="contact-info">
-            <p><img src="email.svg" alt="email"> award3@albany.edu</p>
-            <p><img src="phone.svg" alt="phone"> +1 720.470.3540</p>
-            <p><img src="resume.svg" alt="resume"> <a class="resume-btn" href="resume.pdf">Resume</a></p>
-            <hr>
+        <div class="project_3">
+          <h3>Full-Stack Development</h3>
+          <p>HTML5, CSS3, JavaScript</p>
+          <p>Basic calculator with a modern design, built using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="project-link">View Project</a>
         </div>
-    </section>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h2>📫 Contact</h2>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32" height="32">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32" height="32">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="32" height="32">
+  </footer>
+
 </body>
 </html>
