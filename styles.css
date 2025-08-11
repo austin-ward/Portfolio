@@ -321,3 +321,86 @@ footer {
     padding: var(--space-6) 0;
     border-top: 1px solid var(--border);
 }
+
+/* =========================
+   Mobile-first responsive layer
+   ========================= */
+
+/* <= 1199px — stop using the wide desktop layout */
+@media (max-width: 1199px) {
+  .container {
+    max-width: none;                /* let content breathe on small screens */
+    padding-inline: clamp(16px, 4vw, 28px);
+  }
+
+  /* Nav: centered, scrollable if cramped */
+  nav {
+    top: 0;
+    margin: 0;
+    justify-content: center;
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(8px);
+  }
+  nav ul {
+    padding: 6px;
+    gap: 8px;
+    overflow-x: auto;               /* avoids wrapping mess */
+  }
+  nav ul li a { padding: 10px 12px; letter-spacing: .12em; }
+
+  /* Hero: single column, smaller image */
+  main #hero {
+    grid-template-columns: 1fr;     /* stack */
+    gap: 20px;
+    padding: clamp(16px, 4vw, 28px);
+  }
+  h1#hero-name {
+    font-size: clamp(28px, 6vw, 40px);
+    text-align: left;
+  }
+  #hero-professions .professions {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;    /* or center; your call */
+  }
+  .traits { justify-content: flex-start; gap: 16px; font-size: .9rem; }
+
+  #hero-image {
+    width: 70%;
+    max-width: 280px;
+    margin-inline: 0;               /* align with text */
+  }
+
+  /* Toolbox groups: let them flow; remove the 3-card cap on small screens */
+  .tool-groups {
+    max-width: none;
+    justify-content: center;
+    gap: 24px;
+  }
+  /* default to 1 per row */
+  .tool-group {
+    flex: 1 1 100%;
+    padding: 16px;
+  }
+}
+
+/* 600–991px — 2 cards per row */
+@media (min-width: 600px) and (max-width: 991px) {
+  .tool-group { flex: 1 1 calc(50% - 24px); }
+}
+
+/* >= 992px — 3 cards per row, and cap the whole row to exactly 3 cards */
+@media (min-width: 992px) {
+  .tool-groups {
+    max-width: calc((200px * 3) + (var(--space-8) * 2)); /* your 3-card cap */
+    margin: 0 auto;
+  }
+  .tool-group { flex: 1 1 calc(33.333% - var(--space-8)); }
+}
+
+/* Optional tiny screens polish (<= 400px) */
+@media (max-width: 400px) {
+  nav ul li a { font-size: .8rem; padding: 8px 10px; }
+  #hero-professions .professions > * { font-size: .8rem; padding: 4px 8px; }
+}
+
