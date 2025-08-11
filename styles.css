@@ -1,3 +1,4 @@
+/* Reset & Base */
 *,
 *::before,
 *::after {
@@ -67,6 +68,7 @@ a:hover {
     padding-inline: clamp(16px, 4vw, 32px);
 }
 
+/* Navigation */
 nav {
     background: transparent;
     margin: var(--space-3) 0;
@@ -102,8 +104,8 @@ nav ul li a {
 }
 nav img {
   width: 20px;          
-  height: auto;         
-  object-fit: contain;  
+  height: auto;         /* consistent icon height */
+  object-fit: contain;  /* keep aspect ratio */
   vertical-align: middle;
   margin-right: 5px;   
   margin-bottom: 3px;
@@ -232,6 +234,9 @@ h1#hero-name {
 }
 
 /* Toolbox */
+
+
+
 #skills {
     margin-top: var(--space-3);
     padding: var(--space-8);
@@ -245,10 +250,28 @@ h1#hero-name {
 }
 #skills img {
   width: 36px;          
-  height: 36px;         
-  object-fit: contain;  
+  height: 36px;         /* consistent icon height */
+  object-fit: contain;  /* keep aspect ratio */
   vertical-align: middle;
-  margin-right: 8px;    
+  margin-right: 8px;    /* space between icon and text */
+}
+
+.tool-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-8);
+    justify-content: center;
+    max-width: calc((200px * 3) + (var(--space-8) * 2));
+    margin: 0 auto;
+}
+
+.tool-group {
+    border-radius: var(--radius-xl);
+    background-color: transparent;
+    box-shadow: var(--shadow-md);
+    padding: var(--space-4);
+    size-adjust: 80%;
+    flex: 1 1 calc(33.333% - var(--space-8));
 }
 
 #skills ul {
@@ -266,18 +289,6 @@ h1#hero-name {
 
 .toolbox-title {
     text-align: center;
-}
-
-.tool-groups {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-8);
-    justify-content: center;
-}
-
-.tool-groups li {
-    list-style: none;
-    display: flex;
 }
 
 .projects {
@@ -303,7 +314,7 @@ h1#hero-name {
     margin-top: var(--space-2);
 }
 
-
+/* Footer */
 footer {
     text-align: center;
     color: var(--muted);
