@@ -1,4 +1,3 @@
-/* Reset & Base */
 *,
 *::before,
 *::after {
@@ -335,24 +334,23 @@ footer {
 
   /* Nav: centered, scrollable if cramped */
   nav {
-    top: 0;
-    margin: 0;
-    justify-content: center;
-    background: rgba(0,0,0,.35);
-    backdrop-filter: blur(8px);
+    background: transparent;
+    margin: var(--space-2) 0;
+    position: sticky;
+    top: var(--space-2);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
   }
   nav ul {
     padding: 6px;
     gap: 8px;
-    overflow-x: auto;               /* avoids wrapping mess */
+    overflow-x: auto;               
   }
   nav ul li a { padding: 10px 12px; letter-spacing: .12em; }
 
-  /* Hero: single column, smaller image */
-  main #hero {
-    grid-template-columns: 1fr;     /* stack */
-    gap: 20px;
-    padding: clamp(16px, 4vw, 28px);
+  .hero-left {
+    padding-left: 30px;
   }
   h1#hero-name {
     font-size: clamp(28px, 6vw, 40px);
@@ -361,15 +359,32 @@ footer {
   #hero-professions .professions {
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: flex-start;    /* or center; your call */
+    justify-content: flex-start;    
   }
-  .traits { justify-content: flex-start; gap: 16px; font-size: .9rem; }
+  .traits { 
+    justify-content: flex-start; 
+    gap: 16px; 
+    font-size: .9rem; 
+}
+.hero-image-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
 
-  #hero-image {
-    width: 70%;
+#hero-image {
+    display: block;
+    width: 100%;
     max-width: 280px;
-    margin-inline: 0;               /* align with text */
-  }
+    margin-inline: auto;
+}
+
+.traits {
+    justify-content: center;
+}
 
   /* Toolbox groups: let them flow; remove the 3-card cap on small screens */
   .tool-groups {
@@ -410,7 +425,7 @@ footer {
 @media (max-width: 600px) {
   /* NAV */
   nav {
-    justify-content: center; /* center nav as a whole */
+    justify-content: center; 
     margin: 0;
     top: 0;
   }
@@ -418,30 +433,30 @@ footer {
   nav ul {
     gap: 4px;
     padding: 4px 6px;
-    overflow-x: auto;         /* enable horizontal scroll if needed */
+    overflow-x: auto;         
     white-space: nowrap;
     max-width: 100%;
   }
 
   nav ul li a {
-    font-size: 0.75rem;        /* smaller text for mobile */
+    font-size: 0.75rem;        
     padding: 8px 10px;
     letter-spacing: 0.08em;
   }
 
   nav img {
-    width: 16px;               /* smaller icons in nav */
+    width: 16px;               
     margin-right: 4px;
   }
 
   /* HERO */
   main #hero {
-    grid-template-columns: 1fr; /* stack text and image */
+    grid-template-columns: 1fr; 
     text-align: center;
   }
 
   h1#hero-name {
-    font-size: clamp(24px, 6vw, 32px); /* smaller name on mobile */
+    font-size: clamp(24px, 6vw, 32px); 
     text-align: center;
   }
 
@@ -463,4 +478,3 @@ footer {
     justify-content: center;
   }
 }
-
