@@ -404,3 +404,63 @@ footer {
   #hero-professions .professions > * { font-size: .8rem; padding: 4px 8px; }
 }
 
+/* ===================================
+   MOBILE NAV & HERO RESPONSIVE FIXES
+   =================================== */
+@media (max-width: 600px) {
+  /* NAV */
+  nav {
+    justify-content: center; /* center nav as a whole */
+    margin: 0;
+    top: 0;
+  }
+
+  nav ul {
+    gap: 4px;
+    padding: 4px 6px;
+    overflow-x: auto;         /* enable horizontal scroll if needed */
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 0.75rem;        /* smaller text for mobile */
+    padding: 8px 10px;
+    letter-spacing: 0.08em;
+  }
+
+  nav img {
+    width: 16px;               /* smaller icons in nav */
+    margin-right: 4px;
+  }
+
+  /* HERO */
+  main #hero {
+    grid-template-columns: 1fr; /* stack text and image */
+    text-align: center;
+  }
+
+  h1#hero-name {
+    font-size: clamp(24px, 6vw, 32px); /* smaller name on mobile */
+    text-align: center;
+  }
+
+  #hero-image {
+    margin: 0 auto;
+    max-width: 220px;
+    width: 70%;
+  }
+
+  .traits {
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.8rem;
+  }
+
+  #hero-professions .professions {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+}
+
