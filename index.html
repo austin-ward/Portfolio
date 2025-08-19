@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
   <meta name="description" content="Portfolio of Austin Ward, showcasing skills in UX/UI design, data analysis, and web app development.">
   <meta name="keywords" content="Austin Ward, portfolio, UX/UI design, data analysis, web app development, front-end, back-end, React, JavaScript, HTML, CSS, Python, MySQL">
   <meta name="author" content="Austin Ward">
@@ -14,75 +14,98 @@
 </head>
 <body>
 
+  <div class="ambient-aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
   <!-- Navigation -->
-  <nav id="navbar">
+  <nav class="navbar">
     <div class="container">
       <ul>
-        <li><a href="#about">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer"><img src="content/camera.png" alt="Photography Portfolio" width="auto" height="20">Portfolio</a></li>
+        <li class="left-end-li"><a href="#hero">Home</a></li>
+        <li class="middle-li"><a href="#projects">Projects</a></li>
+        <li class="middle-li"><a href="#contact">Contact</a></li>
+        <li class="right-end-li"><a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer"><img src="content/camera.png" alt="Photography Portfolio" width="auto" height="20">Portfolio</a></li>
       </ul>
-    </div>
+    <nav class="hamburger">
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><img src="content/hamburger.png" alt="Menu">Menu</button>
+    </nav>
+  </div>
   </nav>
 
   <!-- Main -->
   <div class="container">
     <main>
+      
+
+
+
+
       <section id="hero">
-  <!-- LEFT -->
-  <div class="hero-left">
-    <div class="hero-name-traits">
-      <h1 id="hero-name">Austin Ward</h1>
-    </div>
+           <!-- LEFT -->
+              <div class="hero-left">
+                  <div class="hero-name-traits">
+                    <h1 id="hero-name">Austin Ward</h1>
+                  </div>
 
-    <section id="hero-professions">
-      <ul class="professions">
-        <li>UX/UI Design</li>
-        <li>Data Analysis</li>
-        <li>Web App Dev</li>
-      </ul>
-    </section>
+               <section id="hero-professions">
+                  <ul class="professions">
+                    <li>UX/UI Design</li>
+                    <li>Data Analysis</li>
+                    <li>Web App Dev</li>
+                  </ul>
+                </section>
+              </div>
 
-    <section class="education">
-      <h2 id="education">Education</h2>
-      <h3>University at Albany</h3>
-      <p>Bachelor of Science in Informatics</p>
-      <p>Expected Graduation: May 2026</p>
-    </section>
-  </div>
+          <!-- RIGHT (BIG IMAGE) -->
+          <div class="hero-image-wrap">
+            <img src="content/portrait2.png" alt="Austin Ward portrait" id="hero-image">
+            <div class="hero-traits">
+                  <ul class="traits">
+                    <li>Curious</li>
+                    <li>Pragmatic</li>
+                    <li>Driven</li>
+                  </ul>
+            </div>
+              
+          </div>
+          <div class="social-links">
+              <h3 class="social-title">git commit -m "Say Hello"</h3>
 
-  <!-- RIGHT (BIG IMAGE) -->
-  <div class="hero-image-wrap">
-    <img src="content/portrait2.png" alt="Austin Ward portrait" id="hero-image">
-    <div class="hero-traits">
-          <ul class="traits">
-            <li>Curious</li>
-            <li>Pragmatic</li>
-            <li>Driven</li>
-          </ul>
-      </div>
-  </div>
-  <div class="social-links">
-      <a href="https://github.com/austin-ward" target="_blank" rel="noopener">
-        <img src="content/github.png" alt="GitHub" width="32" height="32">
-      </a>
-      <a href="https://linkedin.com/in/austinward5" target="_blank" rel="noopener">
-        <img src="content/linkedin.png" alt="LinkedIn" width="32" height="32">
-      </a>
-      <a href="mailto:award5@albany.edu" target="_blank" rel="noopener">
-        <img src="content/gmail.png" alt="Email" width="32" height="32">
-      </a>
-    </div>
+              <a href="https://github.com/austin-ward" target="_blank" rel="noopener">
+                <img src="content/github.png" alt="GitHub" width="32" height="32">
+              </a>
+              <a href="https://linkedin.com/in/austinward5" target="_blank" rel="noopener">
+                <img src="content/linkedin.png" alt="LinkedIn" width="32" height="32">
+              </a>
+              <a href="mailto:award5@albany.edu" target="_blank" rel="noopener">
+                <img src="content/gmail.png" alt="Email" width="32" height="32">
+              </a>
+          </div>
+
+          <div class="edu-inline">
+            <span class="institution-inline">Education</span>
+            <p></p>State University of New York at Albany — B.S. in Informatics (Expected May 2026)
+          </div>
+
+      
+
 </section>
 
-      <section id="skills">
-        <div class="toolbox-title">
-          <h2>🛠️ Toolbox</h2>
-        </div>
+
+
+
+
+
+<section id="skills">
+    <div class="toolbox-title">
+      <h2>🛠️ Toolbox</h2>
+    </div>
 
         <div class="tool-groups">
-          
+
           <div class="tool-group">
             <div class="front-end">
               <h1 id="front-end">Front-End</h1>
@@ -140,37 +163,67 @@
                 </div>
             </div>
       </section>
-
+    <section id="projects"></section>
       <section class="projects">
-        <h2>Projects</h2>
-        <div class="project_1">
-          <h3>UX/UI Design</h3>
-          <p>Description of the project goes here. Highlight key features and technologies used.</p>
-          <a href="#" class="project-link">View Project</a>
+        <h2>PROJECTS</h2>
+        <div class="project-list">
+          <div class="project_1">
+            <h3>UX/UI Design</h3>
+            <p>🚧 IN PROGRESS</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+
+          <div class="project_2">
+            <h3>Data Analysis</h3>
+            <p>🚧 IN PROGRESS</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
+
+          <div class="project_3">
+            <h3>Full-Stack Development</h3>
+            <p>🚧 IN PROGRESS</p>
+            <a href="#" class="project-link">View Project</a>
+          </div>
         </div>
-        <div class="project_2">
-          <h3>Data Analysis</h3>
-          <p>HTML5, CSS3, JavaScript, Node.js</p>
-          <p>A dynamic website for a fictitious coffee shop, showcasing user login function, inventory management, and online ordering.</p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
-        <div class="project_3">
-          <h3>Full-Stack Development</h3>
-          <p>HTML5, CSS3, JavaScript</p>
-          <p>Basic calculator with a modern design, built using HTML, CSS, and JavaScript.</p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
+
       </section>
     </main>
   </div>
 
   <!-- Footer -->
-  <footer id="contact">
-    <h2>📫 Contact</h2>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32" height="32">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32" height="32">
-    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="32" height="32">
+<section id="contact"></section>
+  <footer class="contact-methods">
+      <a href="https://github.com/austin-ward" target="_blank" rel="noopener">
+        <img src="content/github.png" alt="GitHub" width="32" height="32">
+      </a>
+
+      <a href="https://linkedin.com/in/austinward5" target="_blank" rel="noopener">
+        <img src="content/linkedin.png" alt="LinkedIn" width="32" height="32">
+      </a>
+
+      <a href="mailto:award5@albany.edu" target="_blank" rel="noopener">
+        <img src="content/gmail.png" alt="Email" width="32" height="32">
+      </a>
+
+    <p>&copy; 2025 Austin Ward</p>
+
   </footer>
 
+  <div class="menu-backdrop" data-close-menu hidden></div>
+  <aside id="mobile-menu" class="mobile-menu" hidden>
+    <nav class="mobile-nav" role="navigation" aria-label="Mobile">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer">
+            <img src="content/camera.png" alt="" width="20" height="20"> Portfolio
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <script src="script.js"></script>
 </body>
 </html>
