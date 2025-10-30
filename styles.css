@@ -324,6 +324,20 @@ main #hero li {
     flex: 1 1 calc(33.333% - var(--space-8));
 }
 
+.app-tool-group {
+  display: flex;
+  justify-content: space-between; /* evenly space children */
+  align-items: center;
+  gap: var(--space-4);
+  border-radius: var(--radius-xl);
+  background-color: transparent;
+  box-shadow: var(--shadow-md);
+  padding: var(--space-4);
+  flex: 1 1 calc(33.333% - var(--space-8));
+  flex-wrap: wrap; /* allow items to wrap on small screens */
+  max-width: 275px; /* maintain consistent width */
+}
+
 #skills ul {
     padding: 0;
     align-items: left;
@@ -369,6 +383,12 @@ main #hero li {
     margin-top: var(--space-2);
 }
 
+.project-description {
+    margin-top: var(--space-2);
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
 /* Footer */
 footer {
     text-align: center;
@@ -536,8 +556,6 @@ footer {
 
 
 
-
-
 /* === HAMBURGER MENU === */
 
 
@@ -643,6 +661,16 @@ footer {
     margin: 0;
 
 }
+
+#app_icon {
+    width: 50px;          
+    height: auto;         
+    object-fit: contain;  
+    vertical-align: middle;
+    margin-right: 4px;    
+    margin-bottom: 4px;
+    border-radius: calc(var(--radius-md) - 1px);
+}
 @media (max-width: 800px) {
     .hamburger {
         display: inline-flex;
@@ -690,32 +718,41 @@ body{
 
 .ambient-aurora .b1{
   background: radial-gradient(circle at 50% 50%, rgba(88, 101, 242, 0.582) 0%, rgba(88,101,242,0) 60%);
-  animation: float1 36s ease-in-out infinite alternate;
-  transform: translate(-10%, -5%) scale(1.05);
+  animation: float1 18s ease-in-out infinite alternate;
+  transform: translate(-10%, 20%) scale(1.05);
 }
 .ambient-aurora .b2{
   background: radial-gradient(circle at 50% 50%, rgba(64, 189, 255, .28) 0%, rgba(64,189,255,0) 60%);
-  animation: float2 44s ease-in-out infinite alternate;
-  transform: translate(35%, 10%) scale(1.1);
+  animation: float2 22s ease-in-out infinite alternate;
+  transform: translate(60%, 10%) scale(1.1);
 }
 .ambient-aurora .b3{
   background: radial-gradient(circle at 50% 50%, rgba(168, 92, 255, 0.341) 0%, rgba(167,92,255,0) 62%);
-  animation: float3 52s ease-in-out infinite alternate;
-  transform: translate(-20%, 40%) scale(1);
+  animation: float3 26s ease-in-out infinite alternate;
+  transform: translate(-20%, 100%) scale(1);
+}
+.ambient-aurora .b4{
+  background: radial-gradient(circle at 50% 50%, rgba(100, 28, 255, 0.251) 40%, rgba(0,255,217,0) 60%);
+  animation: float1 20s ease-in-out infinite alternate;
+  transform: translate(80%, -10%) scale(2);
 }
 
 
 @keyframes float1{
-  0%   { transform: translate(-12%, -8%)  scale(1.02); opacity:1;}
+  0%   { transform: translate(200%, -8%)  scale(1.02); opacity:1;}
   100% { transform: translate( 10%,  4%)  scale(1.12); opacity:1;}
 }
 @keyframes float2{
   0%   { transform: translate( 30%,  8%)  scale(1.08); opacity:1;}
-  100% { transform: translate(  2%, 20%)  scale(1.15); opacity:1;}
+  100% { transform: translate( 100%, 20%)  scale(1.15); opacity:1;}
 }
 @keyframes float3{
-  0%   { transform: translate(-22%, 100%)  scale(1.00); opacity:1;}
+  0%   { transform: translate(30%, 100%)  scale(1.00); opacity:1;}
   100% { transform: translate( 15%, 100%)  scale(1.10); opacity:1;}
+}
+@keyframes float4{
+  0%   { transform: translate(100%, -20%)  scale(1.05); opacity:1;}
+  100% { transform: translate( 60%,  10%)  scale(1.12); opacity:1;}
 }
 
 
@@ -723,3 +760,8 @@ body{
   .ambient-aurora .blob{ animation: none; }
 }
 
+
+.tech-glow, .tech-grid   { z-index: -1; }
+.tech-pulse              { z-index: -1; }
+.ambient-aurora          { z-index: -1; }
+.tech-particles          { z-index: -1; }

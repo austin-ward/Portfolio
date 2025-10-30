@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+  <meta name="description" content="MoneyMark — mobile app project page for Austin Ward. Sales & commission tracking for automotive sales professionals.">
+  <title>MoneyMark — Project — Austin Ward</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation (copied from index.html to preserve UI) -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li class="left-end-li"><a href="index.html#hero">Home</a></li>
+        <li class="middle-li"><a href="index.html#projects">Projects</a></li>
+        <li class="middle-li"><a href="index.html#contact">Contact</a></li>
+        <li class="right-end-li"><a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer"><img src="content/camera.png" alt="Photography Portfolio" width="auto" height="20">Portfolio</a></li>
+      </ul>
+      <nav class="hamburger">
+        <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><img src="content/hamburger.png" alt="Menu">Menu</button>
+      </nav>
+    </div>
+  </nav>
+
+  <div class="container">
+    <main>
+
+      <!-- Hero / Project Header -->
+      <section id="hero" style="margin-top:24px;">
+        <div class="hero-left">
+          <div class="hero-name-traits">
+            <h1 id="hero-name">MoneyMark</h1>
+            <p style="color:var(--muted);margin-top:12px;max-width:540px;">A mobile app for sales professionals to track leads, sales, and commissions. Built with a focus on clarity, speed, and trustworthy calculations.</p>
+
+            <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;justify-content:center;">
+              <a href="#screenshots" class="project-link" style="padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);">Screenshots</a>
+              <a href="#features" class="project-link" style="padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);">Features</a>
+              <a href="#tech" class="project-link" style="padding:8px 12px;border-radius:20px;border:1px solid var(--border);background:var(--surface);">Tech</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <img src="content/moneymark/app_icon.png" id="app_icon" alt="MoneyMark app icon" style="width:120px;height:120px;object-fit:cover;display:block;margin:0 auto 12px;">
+
+          <!-- short stats / elevator pitch -->
+          <ul class="traits" style="justify-content:center;gap:20px;list-style:none;padding:0;margin:0;">
+            <li style="text-align:center;"><strong>Platform</strong><div style="color:var(--muted);">iOS</div></li>
+            <li style="text-align:center;"><strong>Role</strong><div style="color:var(--muted);">Independent Developer</div></li>
+            <li style="text-align:center;"><strong>Status</strong><div style="color:var(--muted);">Ready to Ship</div></li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" style="margin-top:36px;">
+        <h2 style="text-align:center;">Key Features</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:16px;">
+          <div style="background:var(--surface);padding:16px;border-radius:var(--radius-md);border:1px solid var(--border);max-width:320px;">
+            <h3>Commission Analytics</h3>
+            <p class="project-description">Commission and sales analytics dashboard with filters for time period, units and commission.</p>
+          </div>
+
+          <div style="background:var(--surface);padding:16px;border-radius:var(--radius-md);border:1px solid var(--border);max-width:320px;">
+            <h3>MARC - AI Assistant</h3>
+            <p class="project-description">AI chatbot powered by Google Gemini's API. Used for sales insights, deal recall, and objection handling advice.</p>
+          </div>
+
+          <div style="background:var(--surface);padding:16px;border-radius:var(--radius-md);border:1px solid var(--border);max-width:320px;">
+            <h3>Deal Book</h3>
+            <p class="project-description">Built in deal book for tracking and managing past deals, stored locally on device.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots / gallery -->
+      <section id="screenshots" style="margin-top:36px;">
+        <h2 style="text-align:center;">Screenshots</h2>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin-top:16px;">
+          <img src="content/moneymark/screen_1.png" alt="MoneyMark screenshot 1" style="width:220px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-md);">
+          <img src="content/moneymark/screen_2.png" alt="MoneyMark screenshot 2" style="width:220px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-md);">
+          <img src="content/moneymark/screen_3.png" alt="MoneyMark screenshot 3" style="width:220px;border-radius:12px;border:1px solid var(--border);box-shadow:var(--shadow-md);">
+        </div>
+      </section>
+
+      <!-- Technologies used -->
+      <section id="tech" style="margin-top:36px;">
+        <h2 style="text-align:center;">Technologies</h2>
+        <div class="app-tool-group" style="margin:18px auto;justify-content:center;">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+            <img src="content/tools/swiftui_logo.png" alt="SwiftUI" style="height:36px;width:auto;display:block;">
+            <span style="font-size:13px;color:var(--muted);">SwiftUI</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+            <img src="content/tools/firebase_logo.png" alt="Firebase" style="height:36px;width:auto;display:block;">
+            <span style="font-size:13px;color:var(--muted);">Firebase</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;">
+            <img src="content/tools/gemini_logo.png" alt="Gemini API" style="height:36px;width:auto;display:block;">
+            <span style="font-size:13px;color:var(--muted);">Gemini API</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to action / links -->
+      <section style="margin-top:36px;text-align:center;">
+        <a href="#contact" class="project-link" style="padding:10px 14px;border-radius:20px;border:1px solid var(--border);background:var(--surface);">Get in Touch</a>
+        <a href="index.html#projects" class="project-link" style="padding:10px 14px;border-radius:20px;border:1px solid var(--border);background:transparent;margin-left:8px;">Back to Projects</a>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Footer (simple) -->
+  <footer style="text-align:center;margin-top:48px;padding:24px 0;border-top:1px solid var(--border);">
+    <a href="https://github.com/austin-ward" target="_blank" rel="noopener"><img src="content/github.png" alt="GitHub" width="32" height="32"></a>
+    <p style="color:var(--muted);margin-top:12px;">&copy; 2025 Austin Ward</p>
+  </footer>
+
+  <!-- mobile menu markup (kept for consistent behavior) -->
+  <div class="menu-backdrop" data-close-menu hidden></div>
+  <aside id="mobile-menu" class="mobile-menu" hidden>
+    <nav class="mobile-nav" role="navigation" aria-label="Mobile">
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li>
+          <a href="https://austinwardphotography.com" target="_blank" rel="noopener noreferrer">
+            <img src="content/camera.png" alt="" width="20" height="20"> Portfolio
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
