@@ -662,7 +662,7 @@ footer {
 
 }
 
-#app_icon {
+.app_icon {
     width: 50px;          
     height: auto;         
     object-fit: contain;  
@@ -671,6 +671,7 @@ footer {
     margin-bottom: 4px;
     border-radius: calc(var(--radius-md) - 1px);
 }
+
 @media (max-width: 800px) {
     .hamburger {
         display: inline-flex;
